@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--Off-white);
+  margin: 0;
+  padding: 0;
+}
+
+.w-100 {
+  width: 100%;
+  height: 250px;
+  border-style: inset;
+  border-width: 5px;
+  border-color: black;
+}
+
+.bt-none {
+  border-bottom: none !important;
+}
+nav,
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+nav {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Dark-grayish-blue);
+  font-size: 19px;
+}
+
+nav > ul > li > a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: large;
+  color: var(--Very-dark-blue);
+}
+
+.container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.container > section {
+  flex: 2;
+}
+
+.info {
+  display: flex;
+}
+
+.info h1 {
+  font-size: 3rem;
+  margin: 20px 0 0;
+}
+
+.info > item {
+  flex: 1;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.item-detail > a.btn {
+  margin-left: 260px;
+  margin-top: 20px;
+  padding: 10px 12px;
+  background-color: var(--soft-red);
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+  height: 40px;
+  color: var(--Off-white);
+}
+
+.container > aside {
+  flex: 1;
+  padding: 20px;
+  height: 500px;
+  background-color: var(--Very-dark-blue);
+}
+
+.container > aside > h2 {
+  color: var(--soft-orange);
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+aside > .item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+
+aside > .item > h3 {
+  color: var(--Off-white);
+}
+
+aside > .item > p {
+  color: var(--Grayish-blue);
+}
+
+/*FOOTER BÖLÜMÜ*/
+
+footer.container{
+  padding-top: 40px;
+  
+}
+
+
+footer.container > .item{
+   flex: 1;
+   display: flex;
+  /* background-color: red;*/
+}
+
+footer.container > .item > img{
+  width: 40%;
+  max-height: 140px;
+  /*flex: 1;*/
+
+}
+
+footer.container > .item > div{
+  flex: 2;
+  padding: 0 20px;
+  
+
+
+}
+
+footer.container > .item > h3, h4{
+  color: rgb(151, 132, 75);
+  margin: 0px;
+ 
+}
+
+footer.container > .item > h4{
+  margin: 10px 0 0;
+}
+
+footer.container > .item p {
+  color: var(--Very-dark-blue);
+  
+}
+
+
+
+
+
+
